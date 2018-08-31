@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thepensionapp.salondigitals.SalonRegistration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSalonName"
+                android:layout_marginLeft="20dp"
+                android:text="Name of your salon?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etSalonName"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_below="@+id/etSalonName"
+                android:id="@+id/tvSalonLocation"
+                android:layout_marginLeft="20dp"
+                android:text="where is your salon located?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_below="@+id/etSalonName"
+                android:id="@+id/etSalonLocation"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/etSalonLocation"
+                android:id="@+id/tvNumberOfEmployees"
+                android:layout_marginLeft="20dp"
+                android:text="How many employee are in your salon?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_below="@+id/tvNumberOfEmployees"
+                android:id="@+id/etNumberOfEmployees"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_below="@+id/etNumberOfEmployees"
+                android:id="@+id/tvPhoneNumber"
+                android:layout_marginLeft="20dp"
+                android:text="Provide your Phone Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_below="@+id/tvPhoneNumber"
+                android:id="@+id/etPhoneNumber"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/etPhoneNumber"
+                android:id="@+id/tvEmailAddress"
+                android:layout_marginLeft="20dp"
+                android:text="Provide your Email Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_below="@+id/tvEmailAddress"
+                android:id="@+id/etEmailAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnRegisterSalon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmailAddress"
+                android:onClick="salonReg"
+                android:text="Register Salon" />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

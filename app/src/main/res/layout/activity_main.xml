@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thepensionapp.salondigitals.MainActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:layout_margin="10dp"
+              android:id="@+id/desc1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Welcome to Salon Digitals"
+              android:layout_marginTop="50dp"/>
+
+          <TextView
+              android:layout_below="@+id/desc1"
+              android:layout_margin="10dp"
+              android:id="@+id/desc4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Create and manage client base"
+              android:layout_marginTop="50dp"/>
+
+          <TextView
+              android:id="@+id/desc2"
+              android:layout_margin="10dp"
+              android:layout_below="@+id/desc4"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Give loyalties to your client"
+              />
+          <TextView
+              android:id="@+id/desc3"
+              android:layout_margin="10dp"
+              android:layout_below="@+id/desc2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Clients can redeem their loyalties"
+              />
+          <TextView
+              android:id="@+id/desc5"
+              android:layout_margin="10dp"
+              android:layout_below="@+id/desc3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Clients can refer their friends to your salon"
+              />
+
+          <TextView
+              android:id="@+id/desc6"
+              android:layout_margin="10dp"
+              android:layout_below="@+id/desc5"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="You can send special offers to clients and many other benefits"
+              />
+
+          <Button
+              android:id="@+id/btnLogin"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/desc6"
+              android:layout_margin="10dp"
+              android:onClick="login"
+              android:text="Log In" />
+
+          <Button
+              android:id="@+id/btnCreateAccount"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/btnLogin"
+              android:layout_margin="10dp"
+              android:onClick="registerSalon"
+              android:text="Create Account" />
+
+
+
+      </RelativeLayout>
+  </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thepensionapp.salondigitals.Login">
+
+
+    <ScrollView
+        android:padding="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:text="Phone Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_below="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:text="Password"
+                android:layout_below="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_below="@+id/tvPassword"
+                android:layout_width="match_parent"
+                android:inputType="numberPassword"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="Login"
+                android:layout_below="@+id/etPassword"
+                android:id="@+id/btnLoginAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
